@@ -29,7 +29,6 @@ async def get_keyword_data(input_keyword, input_country,api_key):
 
     return result
 
-
 async def suggestions_ai_analysis(keyword_data: str, api_key):
     max_retries = 5
 
@@ -48,6 +47,8 @@ async def suggestions_ai_analysis(keyword_data: str, api_key):
             )
 
     return ""
+
+
 
 async def get_suggestion_keywords_google_optimized(query, countryCode):
     # Define categorization keywords for all categories
